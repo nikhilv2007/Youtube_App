@@ -4,9 +4,11 @@
   	<title>Youtube App</title>
   </head>
   <body data-ng-controller='MainCtrl'>
+	<form>
+	    Video Id: <input type="text" data-ng-model="videoId"></input>
+	    <button type="submit" data-ng-click="getAngular(videoId)">Load Video</button><br />
+ 	</form>
     
-    Video Id: <input type="text" data-ng-model="videoId"></input>
-    <button data-ng-click="getAngular(videoId)">Load Video</button><br />
     <webview width="640" height="360" src="" autosize="on" frameborder="0" allowfullscreen></webview>
 
     <script src="JS/lib/angular.min.js"></script>
